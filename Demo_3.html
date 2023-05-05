@@ -25,21 +25,55 @@
         </ol>
         </p>
 
-        <h1>Table</h1>
+        <p><ol type = "a"> <!-- Use a, A, i, I for the ordered list-->
+            <li>Tent</li>
+            <li>Sheet</li>
+            <li>Food
+                <ul>
+                    <li>Fruits</li>
+                    <li>Snaks</li>
+                    <li>Soft drinks</li>
+                </ul></li>
+
+        </ol></p>
+
         <p>
-            <table>
-                <head>
+            <ol start = "5">
+                <li>Bat</li>
+                <li>Ball</li>
+                <li>Stumps</li>
+            </ol>
+        </p>
+
+<!-- Definition list-->
+
+<p>
+    <dl>
+        <dt>ISRO:</dt><dd>Indian Space Research Organisation</dd>
+        <dt>NASA:</dt><dd>US Space Research Organisation</dd>
+
+    </dl>
+</p>
+
+        <h1 id="Tab1">Table</h1>
+        <p>
+            <table border="1">
+                <caption> <b><i>Employee Details</i></b></caption>
+                <thead>
 <!--<tr> used to fill table row wise and <tc> used to fill by column wise. Most prefered is <tr>.-->
     <!--<th> referes the table header. It will be printed in bold-->
         <!--<td> refers the table data-->
+                    <tr><th colspan="4">Details</th></tr>
                     <tr>
+                        <th></th>
                         <th>Name</th>
                         <th>Designation</th>
                         <th>ID</th>
                     </tr>
-                </head>
-                <body>
+                </thead>
+                <tbody>
                     <tr>
+                        <td rowspan="3">Details</tr>
                         <td>Udhai</td>
                         <td>CE</td>
                         <td>031</td>
@@ -49,8 +83,10 @@
                         <td>PRE</td>
                         <td>011</td>
                     </tr>
-                </body>
+                    <tr><td colspan="4", align="center">Final Details</td></tr>
+                </tbody>
             </table>
+            <tfooter>This is table footer</tfooter>
         </p>
     </body>
 </html>

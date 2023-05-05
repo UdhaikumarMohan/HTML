@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--We use method="POST" to send information to server. GET method is used to just run the file -->
+    <form action="Demo_4.html" method="GET">
+        <div>
+        <!--for is used to relate the field. -->
+        <!--type used to define the type of the label-->
+        <!--placeholder - we can use place holder instead of label. It will show the field name inside the textbox in grey shade.-->
+        <!--maxlength used to define the length of the caracter.-->
+        <!--minlength is the vice versa of the max length-->
+        <!--we can set mandatory fields using required-->
+        <label for="ID1">User Name</label>
+        <input type="text" name="username" placeholder="User Name" id="ID1" maxlength="5" required>
+        </div>
+    <!--Name is used to describe the purpose of the textbox.-->
+        <div>
+            <label for="ID2">Password</label>
+            <input type="password" name="password" placeholder="Password" id="ID2" minlength="5">
+        </div>
+
+        <div>
+            <!--min and max used to define the range of the number. step is used to increment and decrement of the number-->
+            <label for="ID3">Year</label>
+            <input type="number" name="year" id="ID3" minlength="4" min="1900" max="2100" step="5">
+        </div>
+
+        <div>
+            <label for="ID4">email</label>
+            <input type="email" id="ID4">
+        </div>
+
+        <div>
+            <label for="ID5">Date</label>
+            <input type="date" id="ID5">
+        </div>
+        
+        <div>
+            <label for="ID6">url</label>
+            <input type="url" id="ID6">
+        </div>
+
+        <div>
+            <label for="ID7">About</label>
+            <textarea name="about" id="ID7" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <input type="checkbox" name="terms" id="ID7" required>
+            <label for="ID8">Terms and Condition</label>
+        </div>
+
+        <div>
+            <input type="radio" name="gender" id="ID8" value="Male">
+            <label for="ID8">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="gender" id="ID9" value="Female">
+            <label for="ID9">Female</label>
+        </div>
+
+        <div>
+            <label for="ID10">Select State</label>
+            <select name="state" id="ID10">
+            <option value="TN">TN</option>
+            <option value="AP" label="AP"></option>
+            </select>
+        </div>
+        <div>
+            <input type="file" name="file" id="ID11">
+            <label for="ID11">Upload file here</label>
+        </div>
+        <div>
+            <input type="image" src="C:\Users\GRENINJA\Desktop\Backup\Photo.jpeg" id="ID12">
+        </div>        
+        <button type="Enter">Click</button>
+        <button type="Reset">Reset</button> 
+
+    </form>
+</body>
+</html>
